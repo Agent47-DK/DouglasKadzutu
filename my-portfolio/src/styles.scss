@@ -1,0 +1,21 @@
+$primary : green;
+@import '~bootstrap/scss/bootstrap';
+html, body {
+    background-color: #CD0D1C;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    word-break: break-word;
+
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    margin-top: 60px;  
+}
+
+.text-color {
+    color: #f0f0f0; // White text color
+}

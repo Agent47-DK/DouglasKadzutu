@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Testing how pull requests work"/>
+  <MainNav/>
+  <HomeSection/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+import HelloWorld from './components/HelloWorld.vue';
+import MainNav from './components/MainNav.vue';
+import HomeSection from './views/HomeSection.vue'
 
-export default {
-  name: 'App',
+@Options({
   components: {
-    HelloWorld
-  }
-}
+    MainNav,
+    HelloWorld,
+    HomeSection,
+    
+  },
+})
+export default class App extends Vue {}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
